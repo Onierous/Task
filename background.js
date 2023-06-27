@@ -14,7 +14,8 @@ function saveTask(name) {
                 let taskTabs = tabs.map(tab => (
                     {
                         url: tab.url,
-                        title: tab.title
+                        title: tab.title,
+                        pinned: tab.pinned // save the 'pinned' status
                     }
                 ));
                 let task = {
@@ -47,7 +48,8 @@ function loadTask(name) {
                         // Open task tabs
                         task.tabs.forEach(tabInfo => {
                             chrome.tabs.create({
-                                url: tabInfo.url
+                                url: tabInfo.url,
+                                pinned: tabInfo.pinned // restore the 'pinned' status
                             });
                         });
                         // Close current tabs
