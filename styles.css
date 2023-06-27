@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 5px 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: #ddd;
+        transform: scale(1.05);
+    }
+}
+
+body {
+    background-color: #fafafa;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.5s ease;
+    --footer-text-color: #f0f0f0;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+    --footer-text-color: #0d0d0d;
+}
+
+.button-67 {
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -5px -5px 15px 0 #fff, 5px 5px 15px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+    font-size: 0.5rem;
+    justify-content: center;
+    line-height: 0.75rem;
+    padding: 7.5px;
+    position: relative;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+}
+
+.button-67:hover {
+    background: #f8f8ff;
+    transform: scale(1.05);
+    box-shadow: -7.5px -7.5px 15px 0 #fff, 7.5px 7.5px 15px 0 #1d0dca17;
+}
+
+@media (min-width: 768px) {
+    .button-67 {
+        padding: 12px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Add this line to vertically center the buttons */
+}
+
+@media (max-width: 60ch) {
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+        /* Update to align-items: stretch */
+    }
+
+    .button-container button {
+        width: 100%;
+        /* Add this line to make the buttons stretch to full width */
+        margin-bottom: 0.75em;
+        /* Add this line to provide spacing between the buttons */
+    }
+}
