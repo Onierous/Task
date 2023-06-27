@@ -1,2 +1,2 @@
 # Task
-task lists for chrome tabs
+Task lists for chrome tabs for efficient switching between contexts.
